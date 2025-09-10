@@ -1,2 +1,6 @@
 @import "tailwindcss";
 
+/* styles.css o globals.css */
+.nav-link {
+  @apply  pb-1 border-b-1 border-transparent hover:border-white transition;
+}
