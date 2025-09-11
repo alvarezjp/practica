@@ -1,13 +1,30 @@
-import Building from "@/Components/Heros/Building";
-import Navbar1 from "@/Components/Nabvars/Navbar1";
-import Navbars2 from "@/Components/Nabvars/Navbars2";
+import SectionPage, { Color } from "@/Components/EstructurasParaComponentes/SectionPage";
+import Navbar3 from "@/Components/Nabvars/NavbarParaEjSection/Navbar3";
+
+interface PropsSectionPage{
+  name:string,
+  id:string,
+  color:Color
+}
+
+const objSectionPage:PropsSectionPage[] = [
+{name:"primero",id:"1",color:'red'},
+{name:"segundo",id:"segundo",color:'blue'},
+{name:"tercero",id:"3",color:'yellow'},
+{name:"cuarto",id:"4",color:'green'},
+{name:"quinto",id:"5",color:'purple'},
+]
 
 export default function Home() {
   return (
-    <div className="bg-black h-screen">
+    <div className="bg-black relative">
      {/* <Building/> */}
      {/* <Navbar1/> */}
-     <Navbars2/>
+     {/* <Navbars2/> */}
+     <Navbar3/>
+     {objSectionPage.map((items) => (
+     <SectionPage name={items.name} id={items.id} typeColor={items.color} />
+    ))}
     </div>
   );
 }
