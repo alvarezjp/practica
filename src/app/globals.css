@@ -4,3 +4,19 @@
 .nav-link {
   @apply  pb-1 border-b-1 border-transparent hover:border-white transition;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-snap-type: y mandatory; /* Eje Y, obligatorio */
+}
+
+section {
+  scroll-snap-align: start; /* Cada sección empieza arriba */
+  height: 100vh; /* Pantalla completa */
+}
+
+
+/* esto lo puse para ver si camvia algo */

@@ -20,10 +20,10 @@ export type Color = "red"|"blue"|"yellow"|"green"|"purple"
 
 const SectionPage = ({ name, id, typeColor }: PropsSections) => {
     return (
-        <div id={id} className={`relative h-screen w-screen border-1 ${colors[typeColor]} text-white text-8xl 
+        <section id={id} className={`relative h-screen w-screen border-1 ${colors[typeColor]} text-white text-8xl 
         flex justify-center items-center`}>
             {name}
-        </div>
+        </section>
     )
 }
 

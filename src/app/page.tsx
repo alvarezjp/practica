@@ -1,4 +1,5 @@
 import SectionPage, { Color } from "@/Components/EstructurasParaComponentes/SectionPage";
+import NavBar4ParaLink from "@/Components/Nabvars/NavBar4ParaScroll";
 import Navbar3 from "@/Components/Nabvars/NavbarParaEjSection/Navbar3";
 
 interface PropsSectionPage{
@@ -9,7 +10,7 @@ interface PropsSectionPage{
 
 const objSectionPage:PropsSectionPage[] = [
 {name:"primero",id:"1",color:'red'},
-{name:"segundo",id:"segundo",color:'blue'},
+{name:"segundo",id:"2",color:'blue'},
 {name:"tercero",id:"3",color:'yellow'},
 {name:"cuarto",id:"4",color:'green'},
 {name:"quinto",id:"5",color:'purple'},
@@ -21,7 +22,8 @@ export default function Home() {
      {/* <Building/> */}
      {/* <Navbar1/> */}
      {/* <Navbars2/> */}
-     <Navbar3/>
+     {/* <Navbar3/> */}
+     <NavBar4ParaLink/>
      {objSectionPage.map((items) => (
      <SectionPage name={items.name} id={items.id} typeColor={items.color} />
     ))}
