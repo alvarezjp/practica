@@ -1,5 +1,5 @@
 import { httpGet } from '@/app/Server/ServerStrapi/ServerStrapi'
-import { Article, StrapiType } from '@/app/Server/Types/Types';
+import { Article, StrapiType } from '@/app/Server/Types/TypeStrapi';
 import React from 'react'
 
 const FrontStrapi =async () => {
