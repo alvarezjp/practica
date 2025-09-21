@@ -5,18 +5,23 @@ import { getVolBook } from '../serverBookGoogle'
 import { Item, TypeBook, VolumeInfo } from '../../Types/TypesBooksGoogle';
 import InfiniteScroll from 'react-infinite-scroll-component';
 
-const ViewBookGoogle =  () => {
+export interface Props{
+    initialItems: Item[];
+}
 
-  const [items, setItems] = useState<Item[]>([])
-  const [startIndex, setStartIndex] = useState(0)
+const ViewBookGoogle =  ({initialItems}:Props) => {
+
+  const [items, setItems] = useState<Item[]>(initialItems)
+  const [startIndex, setStartIndex] = useState(initialItems.length)
   const [hasMode, setHasMore] = useState(true)
 
+  console.log("Estos son los elementos de entrada",initialItems);
 
   // const inputData = await getVolBook<TypeBook>('harry+potter',startIndex,5);
   // const itemsData = inputData.items
 
   const fetchData = async () => {
-    const inputData = await getVolBook<TypeBook>('harry+potter', startIndex, 5);
+    const inputData = await getVolBook<TypeBook>('filosofia', startIndex,5);
     if (!inputData.items || inputData.items.length === 0) {
       setHasMore(false)
       return;
@@ -24,17 +29,17 @@ const ViewBookGoogle =  () => {
 
     setItems((prev) => [...prev, ...inputData.items]);
     setStartIndex((prev) => prev + 5)
+    // console.log(items);
   }
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+ 
 
 console.log('esto son los items que tengo',items)
 
   const typeInfo = <K extends keyof VolumeInfo>(item: Item, key: K): VolumeInfo[K] => {
     return item.volumeInfo[key]
   }
+
   return (
     <div className='text-white'>
       <h1 className='text-white'>Component ViewBookGoogle</h1>

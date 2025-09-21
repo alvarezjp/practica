@@ -3,6 +3,7 @@ import NavBar4ParaLink from "@/Components/Nabvars/NavBar4ParaScroll";
 import Navbar3 from "@/Components/Nabvars/NavbarParaEjSection/Navbar3";
 import FrontStrapi from "@/app/Server/ServerStrapi/ParaStrapi/FrontStrapi";
 import ViewBookGoogle from "./Server/serverBookGoogle/ViewServer/ViewBookGoogle";
+import WraperServer from "./Server/serverBookGoogle/ViewServer/WraperServer";
 
 interface PropsSectionPage{
   name:string,
@@ -32,7 +33,8 @@ export default function Home() {
      <SectionPage name={items.name} id={items.id} typeColor={items.color} />
     ))} */}
     {/* <FrontStrapi/> */}
-    <ViewBookGoogle/>
+    {/* <ViewBookGoogle/> */}
+    <WraperServer/>
     </div>
   );
 }
