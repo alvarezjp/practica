@@ -65,7 +65,7 @@ console.log('esto son los items que tengo',items)
         // }
       >
         {items.map((items) => (
-          <div key={items.id} className='border border-red-300 mt-8'>
+          <div key={items.id} className='border border-red-300 mt-8 h-[150px]'>
             <h1>{typeInfo(items, 'title')}</h1>
             <h2>{typeInfo(items, 'pageCount')}</h2>
             <h3>{typeInfo(items, 'description')}</h3>

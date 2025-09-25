@@ -1,0 +1,72 @@
+{
+  "personas": [
+    {
+      "id": 1,
+      "nombre": "Ana Torres",
+      "edad": 28,
+      "email": "ana.torres@example.com",
+      "telefono": "+56 9 1234 5678",
+      "direccion": "Av. Libertad 123, Santiago, Chile"
+    },
+    {
+      "id": 2,
+      "nombre": "Carlos Fernández",
+      "edad": 35,
+      "email": "carlos.fernandez@example.com",
+      "telefono": "+56 9 2345 6789",
+      "direccion": "Calle Los Robles 456, Valparaíso, Chile"
+    },
+    {
+      "id": 3,
+      "nombre": "María López",
+      "edad": 42,
+      "email": "maria.lopez@example.com",
+      "telefono": "+56 9 3456 7890",
+      "direccion": "Pasaje Las Flores 789, Concepción, Chile"
+    },
+    {
+      "id": 4,
+      "nombre": "Diego Rojas",
+      "edad": 23,
+      "email": "diego.rojas@example.com",
+      "telefono": "+56 9 4567 8901",
+      "direccion": "Av. Central 321, La Serena, Chile"
+    },
+    {
+      "id": 5,
+      "nombre": "Isabel Castillo",
+      "edad": 31,
+      "email": "isabel.castillo@example.com",
+      "telefono": "+56 9 5678 9012",
+      "direccion": "Calle San Martín 654, Antofagasta, Chile"
+    },
+    {
+      "nombre": "tumamita",
+      "direccion": "algo",
+      "email": "algo@algo.com",
+      "telefono": "123123123",
+      "id": 6
+    },
+    {
+      "nombre": "otro mas",
+      "direccion": "escuela agricola ",
+      "email": "ALGO@ALGO.COM",
+      "telefono": "123123",
+      "id": 7
+    },
+    {
+      "direccion": "sdfsdf",
+      "telefono": 12121212,
+      "email": "ALGO@ALGO.COM",
+      "nombre": "asd",
+      "id": 8
+    },
+    {
+      "direccion": "escuela agricola ",
+      "telefono": 111111111,
+      "email": "ALGO@ALGO.COM",
+      "nombre": "algo",
+      "id": 9
+    }
+  ]
+}

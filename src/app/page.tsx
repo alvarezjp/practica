@@ -4,6 +4,8 @@ import Navbar3 from "@/Components/Nabvars/NavbarParaEjSection/Navbar3";
 import FrontStrapi from "@/app/Server/ServerStrapi/ParaStrapi/FrontStrapi";
 import ViewBookGoogle from "./Server/serverBookGoogle/ViewServer/ViewBookGoogle";
 import WraperServer from "./Server/serverBookGoogle/ViewServer/WraperServer";
+import ReactHookForm from "@/Components/Form/ReactHookForm/ReactHookForm";
+import ViewDataForm from "@/Components/ViewData/ViewDataForm";
 
 interface PropsSectionPage{
   name:string,
@@ -21,7 +23,7 @@ const objSectionPage:PropsSectionPage[] = [
 
 export default function Home() {
   return (
-    <div className="bg-black relative h-full
+    <div className="bg-black min-h-screen py-1.5
     ">
       <h1 className="text-white">Pagina funcionando </h1>
      {/* <Building/> */}
@@ -34,7 +36,9 @@ export default function Home() {
     ))} */}
     {/* <FrontStrapi/> */}
     {/* <ViewBookGoogle/> */}
-    <WraperServer/>
+    {/* <WraperServer/> */}
+    <ReactHookForm/>
+    <ViewDataForm/>
     </div>
   );
 }
